@@ -1,7 +1,8 @@
 from eventos import *
 
 class Jogador():
-    posicao = 0
+    def __init__(self):
+        self.posicao = 0
 
 tabuleiro = criarTabuleiro()
 
@@ -22,7 +23,6 @@ while (True):
     else:
         jogador = jogador2
 
-
     input("Aperte Enter para rolar o dado")
     dado = rolarDado()
     jogador.posicao = jogador.posicao + dado
@@ -32,7 +32,6 @@ while (True):
         break
 
     checarTabuleiro(tabuleiro, jogador)
-
 
     print("Jog: " + str(jogador_da_vez))
 
@@ -53,4 +52,4 @@ print("Dado: " + str(dado))
 print("Jog1: " + str(jogador1.posicao))
 print("Jog2: " + str(jogador2.posicao))
 print("")
-print ("Ganhador: Jogador " + str(ganhador))
+print("Ganhador: Jogador " + str(ganhador))
