@@ -23,7 +23,5 @@ class player:
 
             print (self.name, self.hp)
 
-            
 player1 = player(name="Player1", hpRegen=10)
 player2 = player(name="Player2", hpRegen=20)
-
